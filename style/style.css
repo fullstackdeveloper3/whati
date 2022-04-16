@@ -1,0 +1,229 @@
+/* start Global rules*/
+:root {
+    --main-color: #a2c5ac;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #6da171;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+/* End Global rules */
+/* Start Header */
+header {
+    background-color: #1c3144;
+    position: relative;
+}
+header .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container ul {
+    display: flex;
+}
+header .container ul a {
+    margin-right: 25px;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 72px;
+    padding: 20px;
+    overflow: hidden;
+}
+header .container ul li {
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+header .container ul a:hover::before {
+    left: 0;
+}
+header .container ul a::before {
+    content: "";
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    height: 5px;
+    top: 0;
+    transition: 0.6s;
+    left: -100%;
+}
+header .container .right {
+    display: none;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 72px;
+}
+@media (min-width: 767px) {
+    header .container .right{
+        display: flex;
+    }
+}
+header img {
+    transform: scalex(-1);
+    height: 60px;
+}
+header .container > a {
+    color: white;
+    font-size: 3rem;
+}
+@media (max-width: 767px) {
+    header .container > a{
+        display: none;
+    }
+}
+.content {
+    width: 20%;
+    position: absolute;
+    height: 100vh;
+    background-color: #1c3144;
+    left: -100%;
+    transition: 1s;
+}
+#content.one {
+    width: 20%;
+    position: absolute;
+    height: 100vh;
+    background-color: #1c3144;
+    left: 0;
+    transition: 0.5s;
+}
+#content.zero {
+    width: 20%;
+    position: absolute;
+    height: 100vh;
+    background-color: #1c3144;
+    left: -100%;
+    transition: 0.5s;
+}
+@media (max-width: 767px) {
+    #content.one {
+        width: 80%;
+        position: absolute;
+        height: 100vh;
+        background-color: #1c3144;
+        left: 0;
+        transition: 0.5s;
+    }
+    #content.zero {
+        width: 80%;
+        position: absolute;
+        height: 100vh;
+        background-color: #1c3144;
+        left: -100%;
+        transition: 0.5s;
+    }
+}
+header .mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+@media (min-width: 767px) {
+    header .mobile {
+        display: none;
+    }
+}
+header .mobile nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    width: 100%;
+    left: -100%;
+    background-color: #1c3144;
+    transition: 0.6s;
+}
+#barcontent.left {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    width: 100%;
+    left: -100%;
+    background-color: #1c3144;
+    transition: 0.6s;
+}
+#barcontent.right {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background-color: #1c3144;
+    transition: 0.6s;
+}
+header .mobile ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1c3144;
+}
+header .mobile ul a {
+    width: 100%;
+    border-top: 4px solid white;
+    margin: 0;
+}
+header nav > a {
+    border-top: 4px solid white;
+    padding: 15px;
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-color: #1c3144;
+}
+header .mobile > a i {
+    color: white;
+    border: 4px solid white;
+    width: 50px;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    padding: 1px 7px;
+}
+/* End Header */
