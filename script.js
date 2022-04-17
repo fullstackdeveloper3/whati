@@ -1,6 +1,7 @@
 let content = document.getElementById("content")
 let button = document.getElementById("show-ost")
 let mbutton = document.getElementById("mbutton")
+let out = document.getElementById("out")
 
 let barcontent = document.getElementById("barcontent")
 let sidebar = document.getElementById("sidebar")
@@ -29,4 +30,7 @@ mbutton.onclick = function () {
     }else {
         content.className = "one"
     }
+}
+out.onclick = function () { 
+    content.className = "zero"
 }
