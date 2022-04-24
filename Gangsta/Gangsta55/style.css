@@ -296,6 +296,9 @@ header .ostcontainer .music audio {
 }
 @media (max-width: 730px) {
     .chapter img {
-        width: 100%
+        width: 335px
+    }
+    .chapter .pc {
+        display: none;
     }
 }
